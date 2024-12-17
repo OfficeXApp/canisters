@@ -1,0 +1,28 @@
+{
+  "canisters": {
+    "officex-canisters-backend": {
+      "candid": "src/officex-canisters-backend/officex-canisters-backend.did",
+      "package": "officex-canisters-backend",
+      "type": "rust"
+    },
+    "officex-canisters-frontend": {
+      "dependencies": ["officex-canisters-backend"],
+      "source": ["src/officex-canisters-frontend/dist"],
+      "type": "assets",
+      "workspace": "officex-canisters-frontend"
+    },
+    "factory-canister": {
+      "candid": "src/factory-canister/factory-canister.did",
+      "package": "factory-canister",
+      "type": "rust"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

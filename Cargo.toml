@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "src/officex-canisters-backend",
+    "src/factory-canister"
+]
+resolver = "2"
